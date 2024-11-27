@@ -17,12 +17,12 @@ from _plots import plot_model_rejection, plot_model_vs_mascon_contours
 from _utils import fixRandomSeeds, EarlyStopping
 from _validation import validation, validation_results_unpack_df
 
-from .networks._siren import Siren
-from .networks._nerf import NERF
+from networks._siren import Siren
+from networks._nerf import NERF
 
 # Required for loading runs
-from .networks._abs_layer import AbsLayer
-from ._encodings import *
+from networks._abs_layer import AbsLayer
+from _encodings import *
 
 
 def _weights_init(m):

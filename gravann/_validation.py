@@ -3,11 +3,11 @@ import torch
 from tqdm import tqdm
 import numpy as np
 
-from ._losses import contrastive_loss, normalized_loss, normalized_L1_loss, normalized_relative_L2_loss, normalized_relative_component_loss, RMSE, relRMSE
-from ._mascon_labels import ACC_L, U_L, ACC_L_differential
-from ._sample_observation_points import get_target_point_sampler
-from ._integration import ACC_trap, U_trap_opt, compute_integration_grid
-from ._utils import fixRandomSeeds
+from _losses import contrastive_loss, normalized_loss, normalized_L1_loss, normalized_relative_L2_loss, normalized_relative_component_loss, RMSE, relRMSE
+from _mascon_labels import ACC_L, U_L, ACC_L_differential
+from _sample_observation_points import get_target_point_sampler
+from _integration import ACC_trap, U_trap_opt, compute_integration_grid
+from _utils import fixRandomSeeds
 
 
 def compute_c_for_model(model, encoding, mascon_points, mascon_masses, mascon_masses_nu=None, use_acc=True):

@@ -17,7 +17,7 @@ import pyvista as pv
 import pyvistaqt as pvqt
 from tqdm import tqdm
 from scipy.spatial.transform import Rotation as rotation
-pv.set_plot_theme("night")
+pv.set_plot_theme("default")
 
 
 def plot_model_vs_cloud_mesh(model, gt_mesh, encoding, save_path=None):
