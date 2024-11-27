@@ -2,7 +2,7 @@ import numpy as np
 import torch
 import warnings
 import sobol_seq
-from ._encodings import direct_encoding
+from _encodings import direct_encoding
 
 import os
 
